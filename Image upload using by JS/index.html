@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input image</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <----------Below the one line code for using icons the site name is fontawesome---------------- > -->
+    <script src="https://kit.fontawesome.com/f33ac049a7.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+<body>
+
+    <div class="imageUploadContainer">
+        <i class="fa-regular fa-image"></i>
+
+        <label for="inputTag">
+            Select Image <br />
+            <i class="fi fi-rr-picture"></i>
+            <img alt="" class="image">
+            <input id="inputTag" type="file" />
+            <br />
+        </label>
+    </div>
+    <div>
+        <input type="range" class="range" min="0" max="100">
+        <input type="number" name="" id="" class="number">
+    </div>
+</body>
+</html>
+<script>
+    const imgInput = document.querySelector('#inputTag')
+    const imgEl = document.querySelector('.image')
+    imgInput.addEventListener('change', () => {
+        if (imgInput.files && imgInput.files[0]) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                imgEl.src = e.target.result;
+                imgEl.style.height = "100px"
+                imgEl.style.width = "100px";
+            }
+            reader.readAsDataURL(imgInput.files[0]);
+        }
+    })
+</script>
+<style>
+    .imageUploadContainer {
+        text-align: center;
+        padding: 3%;
+        height: 100px;
+        width: 100px;
+        border: thin solid black;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    label {
+        cursor: pointer;
+    }
+</style>

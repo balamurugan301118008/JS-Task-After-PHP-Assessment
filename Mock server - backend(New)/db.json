@@ -1,0 +1,74 @@
+{
+  "post": [
+    {
+      "id": 1,
+      "post_name": "Banglore trip",
+      "user_name": "Bala",
+      "is_starred": true,
+      "post_type": "photo"
+    },
+    {
+      "id": 2,
+      "post_name": "Chennai trip",
+      "user_name": "Amrish",
+      "is_starred": false,
+      "post_type": "vedio"
+    },
+    {
+      "id": 3,
+      "post_name": "Tirupati trip",
+      "user_name": "Guna",
+      "is_starred": true,
+      "post_type": "audio"
+    },
+    {
+      "id": 4,
+      "post_name": "MGM place",
+      "user_name": "karthi",
+      "is_starred": false,
+      "post_type": "photo"
+    },
+    {
+      "id": 5,
+      "post_name": "Tada trip",
+      "user_name": "Amrish",
+      "is_starred": true,
+      "post_type": "vedio"
+    },
+    {
+      "id": 6,
+      "post_name": "kerala trip",
+      "user_name": "sunil",
+      "is_starred": true,
+      "post_type": "photo"
+    },
+    {
+      "id":7,
+      "post_name": "Kochi trip",
+      "user_name": "Gayathiri",
+      "is_starred": false,
+      "post_type": "vedio"
+    },
+    {
+      "id": 8,
+      "post_name": "kanchipuram kovil",
+      "user_name": "tamil",
+      "is_starred": true,
+      "post_type": "audio"
+    },
+    {
+      "id": 9,
+      "post_name": "Ooty trip",
+      "user_name": "mani",
+      "is_starred": true,
+      "post_type": "audio"
+    },
+    {
+      "id": 1,
+      "post_name": "Tiruvanamalai temple",
+      "user_name": "Venkat",
+      "is_starred": false,
+      "post_type": "photo"
+    }
+  ]
+}
